@@ -1,2 +1,2 @@
 # Proyecto Final CCII
-### *Proyecto final Ciencias de la computación II*
+### *Proyecto Final Ciencias de la computación II*
