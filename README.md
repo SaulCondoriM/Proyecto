@@ -19,8 +19,8 @@ Este videojuego tiene la tematica de la pandemia que venimos pasando, el objetiv
 
 ------------
 #### **Objetivos**
-	1.Concientizar a las personas sobre los cuidados y medias que deben tomar para evitar contagiarse de Coronavirus.
-	2.Aplicar los conocimientos adquiridos en el curso de CCII e implementarlos en nuestro videojuego.
-	3.Desarrollar un videojuego que responda a eventos activados por el usuario.
+	1. Concientizar a las personas sobre los cuidados y medias que deben tomar para evitar contagiarse de Coronavirus.
+	2. Aplicar los conocimientos adquiridos en el curso de CCII e implementarlos en nuestro videojuego.
+	3. Desarrollar un videojuego que responda a eventos activados por el usuario.
 
 ------------
