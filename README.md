@@ -1,6 +1,6 @@
 ![Logo Unsa](https://github.com/SaulCondoriM/Proyecto/blob/main/docs/unsa_logo.png)
 # Proyecto Final CCII
-### *Videojuego 2D multiplayer - Plataformas - C++*
+### *Videojuego 2D Multiplayer - Plataformas - C++*
 
 ------------
 
