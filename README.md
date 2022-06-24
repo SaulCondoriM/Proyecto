@@ -1,6 +1,6 @@
 ![Logo Unsa](https://github.com/SaulCondoriM/Proyecto/blob/main/docs/unsa_logo.png)
 # Proyecto Final CCII
-### *Videojuego 2D Multiplayer - Plataformas - C++*
+### *Videojuego Multiplayer - Shooter - C++ - Unreal Engine*
 
 ------------
 
@@ -14,8 +14,8 @@
 
 ------------
 #### **Información del Proyecto**
-Nuestro proyecto es un videojuego plataformero en 2D, esta desarrollado en Unity.
-Este videojuego tiene la tematica de la pandemia que venimos pasando, el objetivo de este videojuego es concientizar a los usuarios mediante el juego las medidas sanitarias que se deben respetar para no contagiarse de Coronavirus.
+Nuestro proyecto es un videojuego en 3D, el cual sera desarrollado hacieno uso del motor grafico Unreal Engine.
+Este videojuego tiene la tematica de la pandemia que venimos pasando, el objetivo del videojuego radica en transmitir a los usuarios de una manera amena y divertida la importancia de respetar y seguir las medidas sanitarias contra el corona virus.
 
 ------------
 #### **Objetivos**
