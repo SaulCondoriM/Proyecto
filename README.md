@@ -15,7 +15,7 @@
 ------------
 #### **Información del Proyecto**
 Nuestro proyecto es un videojuego en 3D, el cual sera desarrollado hacieno uso del motor grafico Unreal Engine.
-Este videojuego tiene la tematica de la pandemia que venimos pasando, el objetivo del videojuego radica en transmitir a los usuarios de una manera amena y divertida la importancia de respetar y seguir las medidas sanitarias contra el corona virus.
+Este videojuego tiene la tematica de la pandemia que venimos pasando, el principal objetivo del juego radica en transmitir a los usuarios de una manera amena y divertida la importancia de respetar y seguir las medidas sanitarias contra el corona virus.
 
 ------------
 #### **Objetivos**
