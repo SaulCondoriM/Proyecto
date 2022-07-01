@@ -15,11 +15,11 @@
 ------------
 #### **Información del Proyecto**
 Nuestro proyecto es un videojuego en 3D, el cual sera desarrollado hacieno uso del motor grafico Unreal Engine.
-Este videojuego tiene la tematica de la pandemia que venimos pasando, el principal objetivo del juego radica en transmitir a los usuarios de una manera amena y divertida la importancia de respetar y seguir las medidas sanitarias contra el corona virus.
+El videojuego es un shooter en tercera persona que ademas es multiplayer con conexion a Steam y EpicGames.
 
 ------------
 #### **Objetivos**
-	1. Concientizar a las personas sobre los cuidados y medias que deben tomar para evitar contagiarse de Coronavirus.
+	1. Conectar varias personas a una misma partida.
 	2. Aplicar los conocimientos adquiridos en el curso de CCII e implementarlos en nuestro videojuego.
 	3. Desarrollar un videojuego que responda a eventos activados por el usuario.
 
