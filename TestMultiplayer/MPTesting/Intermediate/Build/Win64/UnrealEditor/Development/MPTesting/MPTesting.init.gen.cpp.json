@@ -1,0 +1,13 @@
+{
+    "Version": "1.1",
+    "Data": {
+        "Source": "c:\\users\\aldej\\desktop\\programas\\cc- ii\\proyectofinal\\proyecto\\testmultiplayer\\mptesting\\intermediate\\build\\win64\\unrealeditor\\inc\\mptesting\\mptesting.init.gen.cpp",
+        "ProvidedModule": "",
+        "PCH": "c:\\users\\aldej\\desktop\\programas\\cc- ii\\proyectofinal\\proyecto\\testmultiplayer\\mptesting\\intermediate\\build\\win64\\mptestingeditor\\development\\engine\\sharedpch.engine.shadowerrors.h.pch",
+        "Includes": [
+            "c:\\users\\aldej\\desktop\\programas\\cc- ii\\proyectofinal\\proyecto\\testmultiplayer\\mptesting\\intermediate\\build\\win64\\unrealeditor\\development\\mptesting\\definitions.mptesting.h"
+        ],
+        "ImportedModules": [],
+        "ImportedHeaderUnits": []
+    }
+}

@@ -1,0 +1,21 @@
+{
+    "Version": "1.1",
+    "Data": {
+        "Source": "c:\\users\\aldej\\desktop\\programas\\cc- ii\\proyectofinal\\proyecto\\testmultiplayer\\mptesting\\intermediate\\build\\win64\\unrealeditor\\inc\\mptesting\\mptestingcharacter.gen.cpp",
+        "ProvidedModule": "",
+        "PCH": "c:\\users\\aldej\\desktop\\programas\\cc- ii\\proyectofinal\\proyecto\\testmultiplayer\\mptesting\\intermediate\\build\\win64\\mptestingeditor\\development\\engine\\sharedpch.engine.shadowerrors.h.pch",
+        "Includes": [
+            "c:\\users\\aldej\\desktop\\programas\\cc- ii\\proyectofinal\\proyecto\\testmultiplayer\\mptesting\\intermediate\\build\\win64\\unrealeditor\\development\\mptesting\\definitions.mptesting.h",
+            "c:\\users\\aldej\\desktop\\programas\\cc- ii\\proyectofinal\\proyecto\\testmultiplayer\\mptesting\\source\\mptesting\\mptestingcharacter.h",
+            "d:\\epic games\\ue_5.0\\engine\\source\\runtime\\engine\\classes\\gameframework\\character.h",
+            "d:\\epic games\\ue_5.0\\engine\\source\\runtime\\engine\\classes\\gameframework\\charactermovementreplication.h",
+            "d:\\epic games\\ue_5.0\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\engine\\charactermovementreplication.generated.h",
+            "d:\\epic games\\ue_5.0\\engine\\source\\runtime\\engine\\classes\\gameframework\\rootmotionsource.h",
+            "d:\\epic games\\ue_5.0\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\engine\\rootmotionsource.generated.h",
+            "d:\\epic games\\ue_5.0\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\engine\\character.generated.h",
+            "c:\\users\\aldej\\desktop\\programas\\cc- ii\\proyectofinal\\proyecto\\testmultiplayer\\mptesting\\intermediate\\build\\win64\\unrealeditor\\inc\\mptesting\\mptestingcharacter.generated.h"
+        ],
+        "ImportedModules": [],
+        "ImportedHeaderUnits": []
+    }
+}
