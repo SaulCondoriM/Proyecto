@@ -5,7 +5,7 @@
 ------------
 
 
-####  **Autores:**
+###  **Autores:**
   * Condori Machaca Saul Arturo	
   * Delgado Justo Alexandro Ysaác	
   * Ochoa Ortiz Sebastian Andre	
@@ -13,12 +13,12 @@
   * Vargas Mamani Albert	
 
 ------------
-#### **Información del Proyecto**
+### **Información del Proyecto**
 Nuestro proyecto es un videojuego en 3D, el cual sera desarrollado hacieno uso del motor grafico Unreal Engine.
 El videojuego es un shooter en tercera persona que ademas es multiplayer con conexion a Steam y EpicGames.
 
 ------------
-#### **Objetivos**
+### **Objetivos**
 	1. Conectar varias personas a una misma partida.
 	2. Aplicar los conocimientos adquiridos en el curso de CCII e implementarlos en nuestro videojuego.
 	3. Desarrollar un videojuego que responda a eventos activados por el usuario.
