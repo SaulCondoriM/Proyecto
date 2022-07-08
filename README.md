@@ -26,8 +26,10 @@ El videojuego es un shooter en tercera persona que ademas es multiplayer con con
 ------------
 ### **Como Instalar**
 (WINDOWS)
--Tener una cuenta de STEAM.
--Descargar el juego en el siguiente enlace: https://drive.google.com/drive/folders/1VeruVVBDlhTOBMMnNo38CQGv_aH-SkWE?usp=sharing
--Ejecutar el archivo "Blaster.exe"
-![Menu](https://github.com/SaulCondoriM/Proyecto/blob/main/docs/Menu.png)
+
+  * Tener una cuenta de STEAM.
+  * Descargar el juego en el siguiente enlace: https://drive.google.com/drive/folders/1VeruVVBDlhTOBMMnNo38CQGv_aH-SkWE?usp=sharing	
+  * Ejecutar el archivo "Blaster.exe"
+![Menu](https://github.com/SaulCondoriM/Proyecto/blob/main/docs/Menu.PNG)
+
 
