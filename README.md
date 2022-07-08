@@ -24,3 +24,21 @@ El videojuego es un shooter en tercera persona que ademas es multiplayer con con
 	3. Desarrollar un videojuego que responda a eventos activados por el usuario.
 
 ------------
+### **Como Instalar**
+(WINDOWS)
+
+  * Tener una cuenta de STEAM.
+  * Descargar el juego en el siguiente enlace: https://drive.google.com/drive/folders/1VeruVVBDlhTOBMMnNo38CQGv_aH-SkWE?usp=sharing	
+  * Ejecutar el archivo "Blaster.exe".
+![Menu](https://github.com/SaulCondoriM/Proyecto/blob/main/docs/Menu.PNG)
+
+------------
+### **Como Jugar**
+  * El host seleccionara la cantidad de jugadores, y seleccionara "CREAR".
+  * Una vez creada la sesion, los jugadores seleccionaran "UNIRSE".
+  * Utiliza W A S D para moverte.
+  * Click Izquiero para Disparar
+  * Click Derecho para Apuntar.
+
+![Apuntar](https://github.com/SaulCondoriM/Proyecto/blob/main/docs/Apuntar.PNG)
+
