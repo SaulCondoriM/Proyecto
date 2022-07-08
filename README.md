@@ -40,5 +40,5 @@ El videojuego es un shooter en tercera persona que ademas es multiplayer con con
   * Click Izquiero para Disparar
   * Click Derecho para Apuntar.
 
-
+![Apuntar](https://github.com/SaulCondoriM/Proyecto/blob/main/docs/Apuntar.PNG)
 
