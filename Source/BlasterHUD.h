@@ -20,9 +20,6 @@ public:
 	FLinearColor CrosshairsColor;
 };
 
-/**
- * 
- */
 UCLASS()
 class BLASTER_API ABlasterHUD : public AHUD
 {
