@@ -24,6 +24,19 @@ El videojuego es un shooter en tercera persona que ademas es multiplayer con con
 	3. Desarrollar un videojuego que responda a eventos activados por el usuario.
 
 ------------
+### **ORGANIZACION DEL GITHUB**
+(GameAssets)
+
+  * Animations ---> Animaciones del movimiento en general del personaje, armas y municiones - (Archivos Unreal Engine)
+  * Crosshairs ---> Mirilla de cada una de las armas, PRIMARY(mira armas en general), SHOTHUN(mira armas especifico) - (Archivos Unreal Engine)
+  * FX ---> Animaciones de armas especiales (lanzacuetes, granadas, francotirador)
+  * Materials ---> Asssets netamente para construir un mapa (Mapa del juego)
+  * Meshes ---> Mallas del juego (Graficos dentro del juego)
+  * Shells ---> Efectos de Sonido (Archivos tipo .WAV)
+  * Textures ---> Texturas dentro del juego (Iconos como vida, escudo, municion, etc)
+  
+
+------------
 ### **Como Instalar**
 (WINDOWS)
 
