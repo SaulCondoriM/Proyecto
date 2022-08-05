@@ -35,7 +35,20 @@ El videojuego es un shooter en tercera persona que ademas es multiplayer con con
   * Shells ---> Efectos de Sonido (Archivos tipo .WAV)
   * Textures ---> Texturas dentro del juego (Iconos como vida, escudo, municion, etc)
   
+(MultiplayerSessions)
 
+  * Binaries ---> Archivos Unreal Engine para que funciones el Plugin
+  * Content ---> Asset del plugin dentro del Menu
+  * Source ---> Codigo del Plugin
+  
+(Source)
+
+  * Source ---> Todo el codigo de nuestro proyecto
+  
+(docs)
+
+  * Docs ---> Archivos utilizados en el README.md
+  
 ------------
 ### **Como Instalar**
 (WINDOWS)
