@@ -63,6 +63,8 @@ El videojuego es un shooter en tercera persona que ademas es multiplayer con con
   * El host seleccionara la cantidad de jugadores, y seleccionara "CREAR".
   * Una vez creada la sesion, los jugadores seleccionaran "UNIRSE".
   * Utiliza W A S D para moverte.
+  * Tecla E para poder cambiar de arma.
+  * Tecla R para recargar.
   * Click Izquiero para Disparar
   * Click Derecho para Apuntar.
 
