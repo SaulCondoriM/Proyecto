@@ -17,57 +17,73 @@ void ABlasterGameState::GetLifetimeReplicatedProps(TArray<FLifetimeProperty>& Ou
 
 void ABlasterGameState::UpdateTopScore(class ABlasterPlayerState* ScoringPlayer)
 {
-	if (TopScoringPlayers.Num() == 0)
-	{
-		TopScoringPlayers.Add(ScoringPlayer);
-		TopScore = ScoringPlayer->GetScore();
-	}
-	else if (ScoringPlayer->GetScore() == TopScore)
-	{
-		TopScoringPlayers.AddUnique(ScoringPlayer);
-	}
-	else if (ScoringPlayer->GetScore() > TopScore)
-	{
-		TopScoringPlayers.Empty();
-		TopScoringPlayers.AddUnique(ScoringPlayer);
-		TopScore = ScoringPlayer->GetScore();
+	//Patron de diseño Game Loop (Desasocia la progesion del juego de la entrada del usuario)
+	/*
+	Utilizamos el while true para que siempre este en constante actualizacion el Puntaje de cada jugador,
+	sin la necesidad de que el usuario este mandando datos de entrada
+	*/
+	
+	while(true){
+		if (TopScoringPlayers.Num() == 0)
+		{
+			TopScoringPlayers.Add(ScoringPlayer);
+			TopScore = ScoringPlayer->GetScore();
+		}
+		else if (ScoringPlayer->GetScore() == TopScore)
+		{
+			TopScoringPlayers.AddUnique(ScoringPlayer);
+		}
+		else if (ScoringPlayer->GetScore() > TopScore)
+		{
+			TopScoringPlayers.Empty();
+			TopScoringPlayers.AddUnique(ScoringPlayer);
+			TopScore = ScoringPlayer->GetScore();
+		}
 	}
 }
 
 void ABlasterGameState::RedTeamScores()
 {
-	++RedTeamScore;
-	ABlasterPlayerController* BPlayer = Cast<ABlasterPlayerController>(GetWorld()->GetFirstPlayerController());
-	if (BPlayer)
-	{
-		BPlayer->SetHUDRedTeamScore(RedTeamScore);
+	while(true){
+		++RedTeamScore;
+		ABlasterPlayerController* BPlayer = Cast<ABlasterPlayerController>(GetWorld()->GetFirstPlayerController());
+		if (BPlayer)
+		{
+			BPlayer->SetHUDRedTeamScore(RedTeamScore);
+		}
 	}
 }
 
 void ABlasterGameState::BlueTeamScores()
 {
-	++BlueTeamScore;
-	ABlasterPlayerController* BPlayer = Cast<ABlasterPlayerController>(GetWorld()->GetFirstPlayerController());
-	if (BPlayer)
-	{
-		BPlayer->SetHUDBlueTeamScore(BlueTeamScore);
+	while(true){
+		++BlueTeamScore;
+		ABlasterPlayerController* BPlayer = Cast<ABlasterPlayerController>(GetWorld()->GetFirstPlayerController());
+		if (BPlayer)
+		{
+			BPlayer->SetHUDBlueTeamScore(BlueTeamScore);
+		}
 	}
 }
 
 void ABlasterGameState::OnRep_RedTeamScore()
 {
-	ABlasterPlayerController* BPlayer = Cast<ABlasterPlayerController>(GetWorld()->GetFirstPlayerController());
-	if (BPlayer)
-	{
-		BPlayer->SetHUDRedTeamScore(RedTeamScore);
+	while(true){
+		ABlasterPlayerController* BPlayer = Cast<ABlasterPlayerController>(GetWorld()->GetFirstPlayerController());
+		if (BPlayer)
+		{
+			BPlayer->SetHUDRedTeamScore(RedTeamScore);
+		}
 	}
 }
 
 void ABlasterGameState::OnRep_BlueTeamScore()
 {
-	ABlasterPlayerController* BPlayer = Cast<ABlasterPlayerController>(GetWorld()->GetFirstPlayerController());
-	if (BPlayer)
-	{
-		BPlayer->SetHUDBlueTeamScore(BlueTeamScore);
+	while(true){
+		ABlasterPlayerController* BPlayer = Cast<ABlasterPlayerController>(GetWorld()->GetFirstPlayerController());
+		if (BPlayer)
+		{
+			BPlayer->SetHUDBlueTeamScore(BlueTeamScore);
+		}
 	}
 }
