@@ -6,8 +6,7 @@
 
 
 ###  **Autores:**
-  * Condori Machaca Saul Arturo	
-  * Delgado Justo Alexandro Ysaác	
+  * Condori Machaca Saul Arturo		
   * Ochoa Ortiz Sebastian Andre	
   * Soncco Pacco Ivan Ulises	
   * Vargas Mamani Albert	
