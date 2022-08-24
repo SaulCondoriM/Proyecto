@@ -12,7 +12,7 @@ DECLARE_DYNAMIC_MULTICAST_DELEGATE_OneParam(FHighPingDelegate, bool, bPingTooHig
  *
  */
 UCLASS()
-class BLASTER_API ABlasterPlayerController : public APlayerController
+class BLASTER_API ABlasterPlayerController : public APlayerController//Heredando de player Controller
 {
 	GENERATED_BODY()
 public:
@@ -53,7 +53,7 @@ protected:
 	* Sincroniza el tiempo entre el cliente y el servidor
 	*/
 
-	//Solicita la hora actual del servidor, pasando la hora del cliente cuando se envió la solicitud
+	//Solicita la hora actual del servidor, pasando la hora del cliente cuando se enviï¿½ la solicitud
 	UFUNCTION(Server, Reliable)
 	void ServerRequestServerTime(float TimeOfClientRequest);
 
@@ -74,7 +74,7 @@ protected:
 
 	UFUNCTION(Client, Reliable)
 	void ClientJoinMidgame(FName StateOfMatch, float Warmup, float Match, float Cooldown, float StartingTime);
-
+	//Si el ping esta muy alto
 	void HighPingWarning();
 	void StopHighPingWarning();
 	void CheckPing(float DeltaTime);
@@ -110,7 +110,7 @@ private:
 	class UReturnToMainMenu* ReturnToMainMenu;
 
 	bool bReturnToMainMenuOpen = false;
-
+	//Estableciendo Tiempos
 	float LevelStartingTime = 0.f;
 	float MatchTime = 0.f;
 	float WarmupTime = 0.f;
@@ -125,7 +125,7 @@ private:
 
 	UPROPERTY()
 	class UCharacterOverlay* CharacterOverlay;
-
+	//Estableciendo variables iniciales
 	float HUDHealth;
 	bool bInitializeHealth = false;
 	float HUDMaxHealth;
