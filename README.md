@@ -23,6 +23,13 @@ El videojuego es un shooter en tercera persona que ademas es multiplayer con con
 	3. Desarrollar un videojuego que responda a eventos activados por el usuario.
 
 ------------
+### **Aclaraciones con respecto a C++ y Unreal Engine 5 (IMPORTANTE LEER)**
+
+UE5 no usa la biblioteca estándar de C ++ (bueno, la usa en el backend, pero no espera que la use), UE5 tiene su propia implementación y sistema de reflexión solo funcionará con él, si usa la biblioteca estándar C ++ con las API UE5, terminará con errores,
+Úselo solo cuando desee interactuar con bibliotecas externas. Por lo tanto, los nombres de las funciones y los tipos serán diferentes en UE5 de lo que se ve normalmente en el lenguaje de C++, por ejemplo, en lugar de std::string se utiliza FString, en lugar de std::vector es TArray, etc.
+Teniendo en cuenta que ya conoce algunos de los planos, debe tener una idea de cómo se construye UE5, C ++ no es realmente diferente de él, de hecho, ademas del codigo en C++, se utiliza algo llamado "Blueprints", que permite a los desarrolladores crear videojuegos de una forma más sencilla y visual, añadiendo funcionalidades a las clases de juego existentes. Este método no sustituye a la programación C++, sino que es un complemento, ya que los dos sistemas están perfectamente coordinados e integrados entre sí.
+
+------------
 ### **ORGANIZACION DEL GITHUB**
 (GameAssets)
 
