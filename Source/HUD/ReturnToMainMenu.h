@@ -6,9 +6,6 @@
 #include "Blueprint/UserWidget.h"
 #include "ReturnToMainMenu.generated.h"
 
-/**
- *
- */
 UCLASS()
 class BLASTER_API UReturnToMainMenu : public UUserWidget
 {
