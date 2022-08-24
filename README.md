@@ -53,7 +53,7 @@ El videojuego es un shooter en tercera persona que ademas es multiplayer con con
 (WINDOWS)
 
   * Tener una cuenta de STEAM (si no la posee, descargarla en el siguiente enlace : https://store.steampowered.com/?l=spanish)
-  * Una vez abierto STEAM, en la esquina superior izquierda seleccionar STEAM --> PARAMETROS --> DESCARGAS --> Asegurse que la region de descarga este en Peru - Lima, ya que ese sera al servidor que se conectara para que todo puedan jugar.
+  * Una vez abierto STEAM, en la esquina superior izquierda seleccionar STEAM --> PARAMETROS --> DESCARGAS --> Asegurarse que la region de descarga este en Peru - Lima, ya que este sera al servidor al que se conectara el juego para que todos puedan jugar.
   * Descargar el juego en el siguiente enlace: https://drive.google.com/drive/folders/1QS1td01eDyQDzu6-kR5tv6rMvgA9srKG?usp=sharing	
   * Ejecutar el archivo "Blaster.exe".
 ![Menu](https://github.com/SaulCondoriM/Proyecto/blob/main/docs/Menu.PNG)
