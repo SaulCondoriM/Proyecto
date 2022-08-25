@@ -12,10 +12,14 @@ void ASpeedPickup::OnSphereOverlap(UPrimitiveComponent* OverlappedComponent, AAc
 	ABlasterCharacter* BlasterCharacter = Cast<ABlasterCharacter>(OtherActor);
 	if (BlasterCharacter)
 	{
-		UBuffComponent* Buff = BlasterCharacter->GetBuff();
-		if (Buff)
+		//Manejo de Excepciones
+		try
 		{
 			Buff->BuffSpeed(BaseSpeedBuff, CrouchSpeedBuff, SpeedBuffTime);
+		}
+		catch(const std::exception& e)
+		{
+			UE_LOG(LogTemp, Error, TEXT("Error con el buff de VELOCIDAD"), *e.what());
 		}
 	}
 
