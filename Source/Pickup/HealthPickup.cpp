@@ -20,7 +20,15 @@ void AHealthPickup::OnSphereOverlap(UPrimitiveComponent* OverlappedComponent, AA
 		UBuffComponent* Buff = BlasterCharacter->GetBuff();
 		if (Buff)
 		{
-			Buff->Heal(HealAmount, HealingTime);
+			//Manejo de Excepciones
+			try
+			{
+				Buff->Heal(HealAmount, HealingTime);
+			}
+			catch(const std::exception& e)
+			{
+				UE_LOG(LogTemp, Error, TEXT("Error con el buff de VIDA"), *e.what());
+			}
 		}
 	}
 
