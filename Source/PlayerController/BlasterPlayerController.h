@@ -12,7 +12,7 @@ DECLARE_DYNAMIC_MULTICAST_DELEGATE_OneParam(FHighPingDelegate, bool, bPingTooHig
  *
  */
 UCLASS()
-class BLASTER_API ABlasterPlayerController : public APlayerController
+class BLASTER_API ABlasterPlayerController : public APlayerController//Heredando de player Controller
 {
 	GENERATED_BODY()
 public:
@@ -33,8 +33,8 @@ public:
 	void SetHUDRedTeamScore(int32 RedScore);
 	void SetHUDBlueTeamScore(int32 BlueScore);
 
-	virtual float GetServerTime(); // Synced with server world clock
-	virtual void ReceivedPlayer() override; // Sync with server clock as soon as possible
+	virtual float GetServerTime(); // Sincroniza con el reloj del 
+	virtual void ReceivedPlayer() override; // Sincroniza con el reloj del server lo mas antes posible
 	void OnMatchStateSet(FName State, bool bTeamsMatch = false);
 	void HandleMatchHasStarted(bool bTeamsMatch = false);
 	void HandleCooldown();
@@ -50,18 +50,18 @@ protected:
 	void PollInit();
 	virtual void SetupInputComponent() override;
 	/**
-	* Sync time between client and server
+	* Sincroniza el tiempo entre el cliente y el servidor
 	*/
 
-	// Requests the current server time, passing in the client's time when the request was sent
+	//Solicita la hora actual del servidor, pasando la hora del cliente cuando se envi� la solicitud
 	UFUNCTION(Server, Reliable)
 	void ServerRequestServerTime(float TimeOfClientRequest);
 
-	// Reports the current server time to the client in response to ServerRequestServerTime
+	// nforma al cliente de la hora actual del servidor en respuesta a ServerRequestServerTime
 	UFUNCTION(Client, Reliable)
 	void ClientReportServerTime(float TimeOfClientRequest, float TimeServerReceivedClientRequest);
 
-	float ClientServerDelta = 0.f; // difference between client and server time
+	float ClientServerDelta = 0.f; // Diferencia de hora entre el cliente y el servidor
 
 	UPROPERTY(EditAnywhere, Category = Time)
 	float TimeSyncFrequency = 5.f;
@@ -74,7 +74,7 @@ protected:
 
 	UFUNCTION(Client, Reliable)
 	void ClientJoinMidgame(FName StateOfMatch, float Warmup, float Match, float Cooldown, float StartingTime);
-
+	//Si el ping esta muy alto
 	void HighPingWarning();
 	void StopHighPingWarning();
 	void CheckPing(float DeltaTime);
@@ -100,7 +100,7 @@ private:
 	class ABlasterGameMode* BlasterGameMode;
 
 	/** 
-	* Return to main menu
+	* Menu principal
 	*/
 
 	UPROPERTY(EditAnywhere, Category = HUD)
@@ -110,7 +110,7 @@ private:
 	class UReturnToMainMenu* ReturnToMainMenu;
 
 	bool bReturnToMainMenuOpen = false;
-
+	//Estableciendo Tiempos
 	float LevelStartingTime = 0.f;
 	float MatchTime = 0.f;
 	float WarmupTime = 0.f;
@@ -125,7 +125,7 @@ private:
 
 	UPROPERTY()
 	class UCharacterOverlay* CharacterOverlay;
-
+	//Estableciendo variables iniciales
 	float HUDHealth;
 	bool bInitializeHealth = false;
 	float HUDMaxHealth;
