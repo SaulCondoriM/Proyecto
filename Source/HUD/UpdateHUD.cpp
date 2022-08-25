@@ -3,6 +3,8 @@
 #include "MultiplayerSessionsSubsystem.h"
 #include "Blaster/Character/BlasterCharacter.h"
 
+//Functor para actualizar datos como eliminacion, muertes, etc
+
 void UUpdateHUD::operator()()
 {
 	AddToViewport();
