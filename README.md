@@ -81,6 +81,7 @@ Teniendo en cuenta que ya conoce algunos de los planos, debe tener una idea de c
   * Una vez abierto la interfaz 
   ![Interfaz](https://github.com/SaulCondoriM/Proyecto/blob/main/docs/Interfaz.PNG)
   * Hacer click en el Boton PLAY
+  
   ![Play](https://github.com/SaulCondoriM/Proyecto/blob/main/docs/Play.PNG)
 
 
