@@ -73,6 +73,18 @@ Teniendo en cuenta que ya conoce algunos de los planos, debe tener una idea de c
 ![Menu](https://github.com/SaulCondoriM/Proyecto/blob/main/docs/Menu.PNG)
 
 ------------
+### **Como Instalar Motor Grafico Unreal Engine**
+  * Descargar Epic Games: https://www.epicgames.com/site/es-ES/home
+  *  Dirigirse al apartado Unreal Engine e Instalarlo
+  ![Unreal](https://github.com/SaulCondoriM/Proyecto/blob/main/docs/Unreal.PNG)
+  * Ejecutar el archivo "Blaster.uproject" para que pueda generarse todo el proyecto en el unreal
+  * Una vez abierto la interfaz 
+  ![Interfaz](https://github.com/SaulCondoriM/Proyecto/blob/main/docs/Interfaz.PNG)
+  * Hacer click en el Boton PLAY
+  ![Play](https://github.com/SaulCondoriM/Proyecto/blob/main/docs/Play.PNG)
+
+
+------------
 ### **Como Jugar**
   * El host seleccionara la cantidad de jugadores y escogera el modo a jugar, luego seleccionara "CREAR".
   * Una vez creada la sesion, los jugadores seleccionaran "UNIRSE".
