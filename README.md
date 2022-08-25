@@ -1,4 +1,6 @@
-<img src="https://github.com/SaulCondoriM/Proyecto/blob/main/docs/unsa_logo.png" width="70%" />
+<center>
+<img src="https://github.com/SaulCondoriM/Proyecto/blob/main/docs/unsa_logo.png" width="65%" />
+</center>
 <h3 align="center">Proyecto Final CCII </h3>
 <h2 align="center"> BLASTER GAME </h2>
 <h3 align="center">*Videojuego Multiplayer - Shooter - C++ - Unreal Engine* </h3>
