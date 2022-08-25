@@ -1,7 +1,7 @@
 ![Logo Unsa](https://github.com/SaulCondoriM/Proyecto/blob/main/docs/unsa_logo.png)
-# Proyecto Final CCII
-## BLASTER GAME
-### *Videojuego Multiplayer - Shooter - C++ - Unreal Engine*
+<center># Proyecto Final CCII </center>
+<center>## BLASTER GAME </center>
+<center>### *Videojuego Multiplayer - Shooter - C++ - Unreal Engine* </center>
 
 ------------
 
