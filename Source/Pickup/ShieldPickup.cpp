@@ -15,7 +15,15 @@ void AShieldPickup::OnSphereOverlap(UPrimitiveComponent* OverlappedComponent, AA
 		UBuffComponent* Buff = BlasterCharacter->GetBuff();
 		if (Buff)
 		{
-			Buff->ReplenishShield(ShieldReplenishAmount, ShieldReplenishTime);
+			//Manejo de Excepciones
+			try
+			{
+				Buff->ReplenishShield(ShieldReplenishAmount, ShieldReplenishTime);
+			}
+			catch(const std::exception& e)
+			{
+				UE_LOG(LogTemp, Error, TEXT("Error con el buff de ESCUDO"), *e.what());
+			}
 		}
 	}
 
