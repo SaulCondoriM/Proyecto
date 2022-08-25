@@ -14,14 +14,18 @@ UBuffComponent::UBuffComponent()
 
 void UBuffComponent::Heal(float HealAmount, float HealingTime)
 {
-	bHealing = true;
+	TSharePtr<UBuffComponent> bHealing(new UBuffComponent(true));
+	TSharePtr<UBuffComponent> bHealing1 = bHealing;
+	
 	HealingRate = HealAmount / HealingTime;
 	AmountToHeal += HealAmount;
 }
 
 void UBuffComponent::ReplenishShield(float ShieldAmount, float ReplenishTime)
 {
-	bReplenishingShield = true;
+	TSharePtr<UBuffComponent> bReplenishingShield(new UBuffComponent(true));
+	TSharePtr<UBuffComponent> bReplenishingShield1 = bReplenishingShield;
+	
 	ShieldReplenishRate = ShieldAmount / ReplenishTime;
 	ShieldReplenishAmount += ShieldAmount;
 }
