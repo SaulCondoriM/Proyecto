@@ -1,6 +1,6 @@
 // Fill out your copyright notice in the Description page of Project Settings.
 
-
+//Clases que utilizamos
 #include "BlasterPlayerController.h"
 #include "Blaster/HUD/BlasterHUD.h"
 #include "Blaster/HUD/CharacterOverlay.h"
@@ -55,7 +55,7 @@ void ABlasterPlayerController::ClientElimAnnouncement_Implementation(APlayerStat
 		}
 	}
 }
-
+//Inicio juego
 void ABlasterPlayerController::BeginPlay()
 {
 	Super::BeginPlay();
@@ -87,7 +87,7 @@ void ABlasterPlayerController::HideTeamScores()
 		BlasterHUD->CharacterOverlay->ScoreSpacerText->SetText(FText());
 	}
 }
-
+//Score de equipos
 void ABlasterPlayerController::InitTeamScores()
 {
 	BlasterHUD = BlasterHUD == nullptr ? Cast<ABlasterHUD>(GetHUD()) : BlasterHUD;
@@ -105,7 +105,7 @@ void ABlasterPlayerController::InitTeamScores()
 		BlasterHUD->CharacterOverlay->ScoreSpacerText->SetText(FText::FromString(Spacer));
 	}
 }
-
+//Score equipo rojo
 void ABlasterPlayerController::SetHUDRedTeamScore(int32 RedScore)
 {
 	BlasterHUD = BlasterHUD == nullptr ? Cast<ABlasterHUD>(GetHUD()) : BlasterHUD;
@@ -118,7 +118,7 @@ void ABlasterPlayerController::SetHUDRedTeamScore(int32 RedScore)
 		BlasterHUD->CharacterOverlay->RedTeamScore->SetText(FText::FromString(ScoreText));
 	}
 }
-
+//Score equipo azul
 void ABlasterPlayerController::SetHUDBlueTeamScore(int32 BlueScore)
 {
 	BlasterHUD = BlasterHUD == nullptr ? Cast<ABlasterHUD>(GetHUD()) : BlasterHUD;
@@ -131,7 +131,7 @@ void ABlasterPlayerController::SetHUDBlueTeamScore(int32 BlueScore)
 		BlasterHUD->CharacterOverlay->BlueTeamScore->SetText(FText::FromString(ScoreText));
 	}
 }
-
+//Reloj
 void ABlasterPlayerController::Tick(float DeltaTime)
 {
 	Super::Tick(DeltaTime);
@@ -141,7 +141,7 @@ void ABlasterPlayerController::Tick(float DeltaTime)
 	PollInit();
 	CheckPing(DeltaTime);
 }
-
+//Ping
 void ABlasterPlayerController::CheckPing(float DeltaTime)
 {
 	if (HasAuthority()) return;
@@ -177,7 +177,7 @@ void ABlasterPlayerController::CheckPing(float DeltaTime)
 		}
 	}
 }
-
+//Menu principal
 void ABlasterPlayerController::ShowReturnToMainMenu()
 {
 	if (ReturnToMainMenuWidget == nullptr) return;
@@ -211,12 +211,12 @@ void ABlasterPlayerController::OnRep_ShowTeamScores()
 	}
 }
 
-// Is the ping too high?
+
 void ABlasterPlayerController::ServerReportPingStatus_Implementation(bool bHighPing)
 {
 	HighPingDelegate.Broadcast(bHighPing);
 }
-
+//Sincronizar tiempo
 void ABlasterPlayerController::CheckTimeSync(float DeltaTime)
 {
 	TimeSyncRunningTime += DeltaTime;
@@ -226,7 +226,7 @@ void ABlasterPlayerController::CheckTimeSync(float DeltaTime)
 		TimeSyncRunningTime = 0.f;
 	}
 }
-
+//Alerta Ping alto
 void ABlasterPlayerController::HighPingWarning()
 {
 	BlasterHUD = BlasterHUD == nullptr ? Cast<ABlasterHUD>(GetHUD()) : BlasterHUD;
@@ -243,7 +243,7 @@ void ABlasterPlayerController::HighPingWarning()
 			5);
 	}
 }
-
+//Ping alto
 void ABlasterPlayerController::StopHighPingWarning()
 {
 	BlasterHUD = BlasterHUD == nullptr ? Cast<ABlasterHUD>(GetHUD()) : BlasterHUD;
@@ -298,7 +298,7 @@ void ABlasterPlayerController::OnPossess(APawn* InPawn)
 		SetHUDHealth(BlasterCharacter->GetHealth(), BlasterCharacter->GetMaxHealth());
 	}
 }
-
+//Vida
 void ABlasterPlayerController::SetHUDHealth(float Health, float MaxHealth)
 {
 	BlasterHUD = BlasterHUD == nullptr ? Cast<ABlasterHUD>(GetHUD()) : BlasterHUD;
@@ -320,7 +320,7 @@ void ABlasterPlayerController::SetHUDHealth(float Health, float MaxHealth)
 		HUDMaxHealth = MaxHealth;
 	}
 }
-
+//Escudo de energia
 void ABlasterPlayerController::SetHUDShield(float Shield, float MaxShield)
 {
 	BlasterHUD = BlasterHUD == nullptr ? Cast<ABlasterHUD>(GetHUD()) : BlasterHUD;
@@ -342,7 +342,7 @@ void ABlasterPlayerController::SetHUDShield(float Shield, float MaxShield)
 		HUDMaxShield = MaxShield;
 	}
 }
-
+//Score
 void ABlasterPlayerController::SetHUDScore(float Score)
 {
 	BlasterHUD = BlasterHUD == nullptr ? Cast<ABlasterHUD>(GetHUD()) : BlasterHUD;
@@ -379,7 +379,7 @@ void ABlasterPlayerController::SetHUDDefeats(int32 Defeats)
 		HUDDefeats = Defeats;
 	}
 }
-
+//Tipo de Arma
 void ABlasterPlayerController::SetHUDWeaponAmmo(int32 Ammo)
 {
 	BlasterHUD = BlasterHUD == nullptr ? Cast<ABlasterHUD>(GetHUD()) : BlasterHUD;
@@ -397,7 +397,7 @@ void ABlasterPlayerController::SetHUDWeaponAmmo(int32 Ammo)
 		HUDWeaponAmmo = Ammo;
 	}
 }
-
+//Cantidad de Balas
 void ABlasterPlayerController::SetHUDCarriedAmmo(int32 Ammo)
 {
 	BlasterHUD = BlasterHUD == nullptr ? Cast<ABlasterHUD>(GetHUD()) : BlasterHUD;
@@ -437,7 +437,7 @@ void ABlasterPlayerController::SetHUDMatchCountdown(float CountdownTime)
 		BlasterHUD->CharacterOverlay->MatchCountdownText->SetText(FText::FromString(CountdownText));
 	}
 }
-
+//Establecer conteo
 void ABlasterPlayerController::SetHUDAnnouncementCountdown(float CountdownTime)
 {
 	BlasterHUD = BlasterHUD == nullptr ? Cast<ABlasterHUD>(GetHUD()) : BlasterHUD;
@@ -459,7 +459,7 @@ void ABlasterPlayerController::SetHUDAnnouncementCountdown(float CountdownTime)
 		BlasterHUD->Announcement->WarmupTime->SetText(FText::FromString(CountdownText));
 	}
 }
-
+//Establecer Granadas
 void ABlasterPlayerController::SetHUDGrenades(int32 Grenades)
 {
 	BlasterHUD = BlasterHUD == nullptr ? Cast<ABlasterHUD>(GetHUD()) : BlasterHUD;
@@ -477,7 +477,7 @@ void ABlasterPlayerController::SetHUDGrenades(int32 Grenades)
 		HUDGrenades = Grenades;
 	}
 }
-
+//Establecer Tiempo
 void ABlasterPlayerController::SetHUDTime()
 {
 	float TimeLeft = 0.f;
@@ -629,8 +629,8 @@ void ABlasterPlayerController::HandleCooldown()
 	if (BlasterHUD)
 	{
 		BlasterHUD->CharacterOverlay->RemoveFromParent();
-		bool bHUDValid = BlasterHUD->Announcement &&
-			BlasterHUD->Announcement->AnnouncementText &&
+		bool bHUDValid = BlasterHUD->Announcement && 
+			BlasterHUD->Announcement->AnnouncementText && 
 			BlasterHUD->Announcement->InfoText;
 
 		if (bHUDValid)
