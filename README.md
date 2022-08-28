@@ -39,6 +39,8 @@ Teniendo en cuenta que ya conoce algunos de los planos, debe tener una idea de c
 
 ## Video de presentacion del software (Diapositivas)
 
+Hacer click en la imagen o entrar a este link: https://youtu.be/blcT4H92LpQ
+
 [![vPresentacion](https://github.com/SaulCondoriM/Proyecto/blob/main/docs/Menu.PNG)](https://youtu.be/blcT4H92LpQ)
 
 ------------
