@@ -36,6 +36,12 @@ UE5 no usa la biblioteca estándar de C ++ (bueno, la usa en el backend, pero no
 Teniendo en cuenta que ya conoce algunos de los planos, debe tener una idea de cómo se construye UE5, C ++ no es realmente diferente de él, de hecho, ademas del codigo en C++, se utiliza algo llamado "Blueprints", que permite a los desarrolladores crear videojuegos de una forma más sencilla y visual, añadiendo funcionalidades a las clases de juego existentes. Este método no sustituye a la programación C++, sino que es un complemento, ya que los dos sistemas están perfectamente coordinados e integrados entre sí.
 
 ------------
+
+## Video de presentacion del software (Diapositivas)
+
+[![vPresentacion](https://github.com/SaulCondoriM/Proyecto/blob/main/docs/Menu.PNG)](https://youtu.be/blcT4H92LpQ)
+
+------------
 ### **ORGANIZACION DEL GITHUB**
 (GameAssets)
 
